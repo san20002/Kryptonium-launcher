@@ -1,13 +1,13 @@
 {
-  "name": "helioslauncher",
+  "name": "helioslauncherfr",
   "version": "1.8.0",
-  "productName": "Helios Launcher",
-  "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "productName": "HeliosLauncherFR",
+  "description": "Launcher Minecraft Moddé",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/) & Zapto",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/HeliosLauncher",
+  "homepage": "https://github.com/ZaptoInc/HeliosLauncherFR",
   "bugs": {
-    "url": "https://github.com/dscalzi/HeliosLauncher/issues"
+    "url": "https://github.com/ZaptoInc/HeliosLauncherFR/issues"
   },
   "private": true,
   "main": "index.js",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+    "url": "git+https://github.com/ZaptoInc/HeliosLauncherFR.git"
   }
 }
