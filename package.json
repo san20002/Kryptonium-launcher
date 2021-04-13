@@ -1,11 +1,11 @@
 {
   "name": "aventurelauncher",
   "version": "1.8.1",
-  "productName": "HeliosLauncherFR",
+  "productName": "Aventure Launcher",
   "description": "Launcher Minecraft Moddé",
   "author": "Daniel Scalzi (https://github.com/dscalzi/) & Zapto",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/ZaptoInc/HeliosLauncherFR",
+  "homepage": "https://github.com/ZaptoOriginal/AventureLauncher",
   "bugs": {
     "url": "https://github.com/ZaptoInc/HeliosLauncherFR/issues"
   },
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZaptoInc/HeliosLauncherFR.git"
+    "url": "git+https://github.com/ZaptoOriginal/AventureLauncher.git"
   }
 }

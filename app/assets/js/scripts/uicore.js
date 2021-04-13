@@ -49,7 +49,7 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/ZaptoInc/HeliosLauncherFR/releases/download/v${info.version}/helioslauncherfr-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/ZaptoOriginal/AventureLauncher/releases/download/v${info.version}/Aventure-Launcher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
