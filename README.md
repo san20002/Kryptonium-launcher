@@ -1,100 +1,89 @@
 <p align="center"><img src="./app/assets/images/SealCircle.png" width="150px" height="150px" alt="aventium softworks"></p>
 
-<h1 align="center">Helios Launcher</h1>
+<h1 align="center">HeliosLauncherFR</h1>
 
-<em><h5 align="center">(formerly Electron Launcher)</h5></em>
+<em><h5 align="center">(Ancien Launcher Electron)</h5></em>
 
 [<p align="center"><img src="https://img.shields.io/travis/dscalzi/HeliosLauncher.svg?style=for-the-badge" alt="travis">](https://travis-ci.org/dscalzi/HeliosLauncher) [<img src="https://img.shields.io/github/downloads/dscalzi/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/HeliosLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="stark"></p>
 
-<p align="center">Join modded servers without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
+<p align="center">Rejoignez des serveurs moddés sans vous soucier d'installer Java, Forge ou d'autres mods. Nous nous en occuperons pour vous.</p>
 
-![Screenshot 1](https://i.imgur.com/6o7SmH6.png)
-![Screenshot 2](https://i.imgur.com/x3B34n1.png)
+![Screenshot 1](https://i.imgur.com/7uqUPnB.png)
+![Screenshot 2](https://i.imgur.com/2SosdCr.png)
 
-## Features
+## Fonctionnalités
 
-* 🔒 Full account management.
-  * Add multiple accounts and easily switch between them.
-  * Credentials are never stored and transmitted directly to Mojang.
-* 📂 Efficient asset management.
-  * Receive client updates as soon as we release them.
-  * Files are validated before launch. Corrupt or incorrect files will be redownloaded.
-* ☕ **Automatic Java validation.**
-  * If you have an incompatible version of Java installed, we'll install the right one *for you*.
-  * You do not need to have Java installed to run the launcher.
-* 📰 News feed natively built into the launcher.
-* ⚙️ Intuitive settings management, including a Java control panel.
-* Supports all of our servers.
-  * Switch between server configurations with ease.
-  * View the player count of the selected server.
-* Automatic updates. That's right, the launcher updates itself.
-*  View the status of Mojang's services.
+* 🔒 Gestion complète des comptes.
+  * Possibilité d'ajouter plusieurs comptes et changer facilement entre eux.
+  * Les informations d'identification ne sont jamais stockées et transmises directement à Mojang.
+* 📂 Gestion efficace des assets.
+  * Recevez les mises à jour du client dès que nous les publions.
+  * Les fichiers sont validés avant le lancement. Les fichiers corrompus ou incorrects seront retéléchargés.
+* ☕ **Validation automatique de Java.**
+  * Si vous avez une version incompatible de Java installée, nous installerons la bonne *pour vous*.
+  * Vous n'avez pas besoin d'installer Java pour exécuter le launcher.
+* 📰 Flux d'actualités intégré nativement dans le launcher.
+* ⚙️ Gestion intuitive des paramètres, y compris un panneau de configuration Java.
+* Prend en charge tous nos serveurs.
+  * Changez facilement entre les configurations de serveur.
+  * Affiche le nombre de joueurs du serveur sélectionné.
+* Mises à jour automatiques. C'est vrai, le launcher se met à jour tout seul.
+*  Voir l'état des services de Mojang.
 
-This is not an exhaustive list. Download and install the launcher to gauge all it can do!
+Cette liste n'est pas exhaustive. Téléchargez et installez le launcher pour voir tout ce qu'il peut faire!
 
-#### Need Help? [Check the wiki.][wiki]
+#### Besoin d'aide? [Consultez le wiki.][wiki]
 
-#### Like the project? Leave a ⭐ star on the repository!
+#### Vous aimez le projet? Laisser une ⭐ étoile sur la repo!
 
-## Downloads
+**Plateformes prises en charge**
 
-You can download from [GitHub Releases](https://github.com/dscalzi/HeliosLauncher/releases)
-
-#### Latest Release
-
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher.svg?style=flat-square)](https://github.com/dscalzi/HeliosLauncher/releases/latest)
-
-#### Latest Pre-Release
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher/all.svg?style=flat-square)](https://github.com/dscalzi/HeliosLauncher/releases)
-
-**Supported Platforms**
-
-If you download from the [Releases](https://github.com/dscalzi/HeliosLauncher/releases) tab, select the installer for your system.
-
-| Platform | File |
+| Plateforme | Fichier |
 | -------- | ---- |
-| Windows x64 | `Helios-Launcher-setup-VERSION.exe` |
-| macOS | `Helios-Launcher-setup-VERSION.dmg` |
-| Linux x64 | `Helios-Launcher-setup-VERSION.AppImage` |
+| Windows x64 | `helioslauncherfr-setup-VERSION.exe` |
+| macOS | `helioslauncherfr-setup-VERSION.dmg` |
+| Linux x64 | `helioslauncherfr-setup-VERSION.AppImage` |
 
 ## Console
 
-To open the console, use the following keybind.
+Pour ouvrir la console, utilisez la combinaison de touches suivante.
 
 ```console
 ctrl + shift + i
 ```
 
-Ensure that you have the console tab selected. Do not paste anything into the console unless you are 100% sure of what it will do. Pasting the wrong thing can expose sensitive information.
+Assurez-vous que l'onglet de la console est sélectionné. Ne collez rien dans la console à moins d'être sûr à 100% de ce que ça va faire. Coller la mauvaise chose peut exposer des informations sensibles.
 
-#### Export Output to a File
+#### Exporter la sortie vers un fichier
 
-If you want to export the console output, simply right click anywhere on the console and click **Save as..**
+Si vous souhaitez exporter la sortie de la console, cliquez simplement avec le bouton droit n'importe où sur la console et cliquez sur **Enregistrer sous ..**
 
-![console example](https://i.imgur.com/T5e73jP.png)
+![example de console](https://i.imgur.com/T5e73jP.png)
 
 
-## Development
+## Développement
 
-### Getting Started
+Cette section détaille la configuration d'un environnement de développement de base.
 
-**System Requirements**
+### Mise en route
 
-* [Node.js][nodejs] v12
+**Configuration requise**
+
+* [Node.js][nodejs] v14
 
 ---
 
-**Clone and Install Dependencies**
+**Cloner et installer les dépendances**
 
 ```console
 > git clone https://github.com/dscalzi/HeliosLauncher.git
-> cd HeliosLauncher
+> cd HeliosLauncherFR
 > npm install
 ```
 
 ---
 
-**Launch Application**
+**Lancer l'application**
 
 ```console
 > npm start
@@ -102,15 +91,15 @@ If you want to export the console output, simply right click anywhere on the con
 
 ---
 
-**Build Installers**
+**Generer les installateurs**
 
-To build for your current platform.
+À construire sur votre plate-forme actuelle.
 
 ```console
 > npm run dist
 ```
 
-Build for a specific platform.
+Generer pour une plate-forme spécifique.
 
 | Platform    | Command              |
 | ----------- | -------------------- |
@@ -118,15 +107,15 @@ Build for a specific platform.
 | macOS       | `npm run dist:mac`   |
 | Linux x64   | `npm run dist:linux` |
 
-Builds for macOS may not work on Windows/Linux and vice-versa.
+La génération pour macOS peut ne pas fonctionner sous Windows/Linux et vice-versa.
 
 ---
 
 ### Visual Studio Code
 
-All development of the launcher should be done using [Visual Studio Code][vscode].
+Tout le développement du launcher doit être effectué en utilisant [Visual Studio Code][vscode].
 
-Paste the following into `.vscode/launch.json`
+Collez ce qui suit dans `.vscode/launch.json`
 
 ```JSON
 {

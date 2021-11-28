@@ -5,10 +5,11 @@
  * modules, excluding dependencies.
  */
 // Requirements
-const $                                      = require('jquery')
-const {ipcRenderer, remote, shell, webFrame} = require('electron')
-const isDev                                  = require('./assets/js/isdev')
-const LoggerUtil                             = require('./assets/js/loggerutil')
+const $                              = require('jquery')
+const {ipcRenderer, shell, webFrame} = require('electron')
+const remote                         = require('@electron/remote')
+const isDev                          = require('./assets/js/isdev')
+const LoggerUtil                     = require('./assets/js/loggerutil')
 
 const loggerUICore             = LoggerUtil('%c[UICore]', 'color: #000668; font-weight: bold')
 const loggerAutoUpdater        = LoggerUtil('%c[AutoUpdater]', 'color: #000668; font-weight: bold')
@@ -26,9 +27,9 @@ window.eval = global.eval = function () {
 
 // Display warning when devtools window is opened.
 remote.getCurrentWebContents().on('devtools-opened', () => {
-    console.log('%cThe console is dark and full of terrors.', 'color: white; -webkit-text-stroke: 4px #a02d2a; font-size: 60px; font-weight: bold')
-    console.log('%cIf you\'ve been told to paste something here, you\'re being scammed.', 'font-size: 16px')
-    console.log('%cUnless you know exactly what you\'re doing, close this window.', 'font-size: 16px')
+    console.log('%cLa console est sombre et pleine de terreurs.', 'color: white; -webkit-text-stroke: 4px #a02d2a; font-size: 60px; font-weight: bold')
+    console.log('%cSi on vous a dit de coller quelque chose ici, quelqu \'un essaye de vous arnaquer.', 'font-size: 16px')
+    console.log('%cÀ moins que vous ne sachiez exactement ce que vous faites, fermez cette fenêtre.', 'font-size: 16px')
 })
 
 // Disable zoom, needed for darwin.
@@ -42,13 +43,13 @@ if(!isDev){
         switch(arg){
             case 'checking-for-update':
                 loggerAutoUpdater.log('Checking for update..')
-                settingsUpdateButtonStatus('Checking for Updates..', true)
+                settingsUpdateButtonStatus('Vérification des mises à jour..', true)
                 break
             case 'update-available':
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/helioslauncher-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/ZaptoOriginal/AventureLauncher/releases/download/v${info.version}/Aventure-Launcher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
@@ -56,7 +57,7 @@ if(!isDev){
                 break
             case 'update-downloaded':
                 loggerAutoUpdaterSuccess.log('Update ' + info.version + ' ready to be installed.')
-                settingsUpdateButtonStatus('Install Now', false, () => {
+                settingsUpdateButtonStatus('Installer Maintenant', false, () => {
                     if(!isDev){
                         ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
                     }
@@ -65,7 +66,7 @@ if(!isDev){
                 break
             case 'update-not-available':
                 loggerAutoUpdater.log('No new update found.')
-                settingsUpdateButtonStatus('Check for Updates')
+                settingsUpdateButtonStatus('Vérifier les mises à jour')
                 break
             case 'ready':
                 updateCheckListener = setInterval(() => {
