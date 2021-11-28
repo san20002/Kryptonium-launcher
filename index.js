@@ -11,7 +11,7 @@ const semver = require('semver')
 const url = require('url')
 
 const redirectUriPrefix = 'https://login.microsoftonline.com/common/oauth2/nativeclient?'
-const clientID = 'client id here'
+const clientID = 'b462ebf1-637a-458a-aa9e-4e0d83dea328'
 
 // Setup auto updater.
 function initAutoUpdater(event, data) {
