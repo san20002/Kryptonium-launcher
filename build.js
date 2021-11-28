@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'aventurelauncher',
-        productName: 'Aventure-Launcher',
-        artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2021 Daniel Scalzi & Zapto',
+        appId: 'Animacraft launcher',
+        productName: 'animacraft-Launcher',
+        artifactName: '${productName}-setup-.${ext}',
+        copyright: 'Copyright © 2021 San202',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -46,9 +46,9 @@ builder.build({
         },
         linux: {
             target: 'AppImage',
-            maintainer: 'Daniel Scalzi',
-            vendor: 'Daniel Scalzi',
-            synopsis: 'Modded Minecraft Launcher',
+            maintainer: 'San202',
+            vendor: 'San202',
+            synopsis: 'Launcher Minecraft Moddé',
             description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.',
             category: 'Game'
         },
