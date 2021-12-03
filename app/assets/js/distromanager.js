@@ -537,7 +537,7 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'https://animcraft1.000webhostapp.com/distribution.json' //mettre le lien vers la distribution du launcher (HeliosLauncherFR)
+        const distroURL = 'https://raw.githubusercontent.com/san20002/repo/main/distribution.json' //mettre le lien vers la distribution du launcher (HeliosLauncherFR)
         //const distroURL = 'https://raw.githubusercontent.com/san20002/repo/main/distribution.json'
         const opts = {
             url: distroURL,
