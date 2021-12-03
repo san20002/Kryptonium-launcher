@@ -323,7 +323,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                 // Show this information to the user.
                 setOverlayContent(
                     'Aucune installation<br>Java compatible trouvée',
-                    'Pour rejoindre WesterosCraft, vous avez besoin d\'une installation 64 bits de Java 8. Souhaitez-vous que nous en installions une copie? En installant, vous acceptez<a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">le contrat de licence d\'Oracle</a>.',
+                    'Pour rejoindre Animacraft, vous avez besoin d\'une installation 64 bits de Java 8. Souhaitez-vous que nous en installions une copie? En installant, vous acceptez<a href="http://www.oracle.com/technetwork/java/javase/terms/license/index.html">le contrat de licence d\'Oracle</a>.',
                     'Installer Java',
                     'Installer manuellement'
                 )
