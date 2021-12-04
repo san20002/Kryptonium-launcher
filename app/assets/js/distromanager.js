@@ -537,8 +537,8 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'http://mc.westeroscraft.com/WesterosCraftLauncher/distribution.json'
-        //const distroURL = 'https://gist.githubusercontent.com/dscalzi/53b1ba7a11d26a5c353f9d5ae484b71b/raw/'
+        const distroURL = 'http://fiverr.cu.ma/distribution.json'
+        //const distroURL = 'https://raw.githubusercontent.com/san20002/REPO2/main/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
