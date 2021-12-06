@@ -1164,9 +1164,9 @@ function prepareJavaTab(){
  */
 
 const settingsTabAbout             = document.getElementById('settingsTabAbout')
-const settingsAboutChangelogTitle  = settingsTabAbout.getElementsByClassName('settingsChangelogTitle')[0]
-const settingsAboutChangelogText   = settingsTabAbout.getElementsByClassName('settingsChangelogText')[0]
-const settingsAboutChangelogButton = settingsTabAbout.getElementsByClassName('settingsChangelogButton')[0]
+const settingsAboutChangelogTitle  = settingsTabAbout.getElementsByClassName('')[0]
+const settingsAboutChangelogText   = settingsTabAbout.getElementsByClassName('')[0]
+const settingsAboutChangelogButton = settingsTabAbout.getElementsByClassName('')[0]
 
 // Bind the devtools toggle button.
 document.getElementById('settingsAboutDevToolsButton').onclick = (e) => {

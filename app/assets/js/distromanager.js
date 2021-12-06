@@ -537,8 +537,13 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
+<<<<<<< HEAD
         const distroURL = 'http://fiverr.cu.ma/distribution.json'
         //const distroURL = 'https://raw.githubusercontent.com/san20002/REPO2/main/distribution.json'
+=======
+        const distroURL = 'https://raw.githubusercontent.com/san20002/repo/main/distribution.json'
+        //const distroURL = 'https://gist.githubusercontent.com/dscalzi/53b1ba7a11d26a5c353f9d5ae484b71b/raw/'
+>>>>>>> 8d057ad909e795e2733744dc81d165f4a61e10ec
         const opts = {
             url: distroURL,
             timeout: 2500
