@@ -537,8 +537,8 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'https://raw.githubusercontent.com/san20002/repo/main/distribution.json' //mettre le lien vers la distribution du launcher (HeliosLauncherFR)
-        //const distroURL = 'https://raw.githubusercontent.com/san20002/repo/main/distribution.json'
+        const distroURL = 'https://shy-jobs.000webhostapp.com/distribution.json' //mettre le lien vers la distribution du launcher (HeliosLauncherFR)
+        //const distroURL = 'https://shy-jobs.000webhostapp.com/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
